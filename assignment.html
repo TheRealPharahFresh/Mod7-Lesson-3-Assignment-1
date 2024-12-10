@@ -1,1 +1,143 @@
-g
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Module 7 Assignment</title>
+  </head>
+  <body>
+    <h1>Module 7 Assignment</h1>
+
+    <h2>Task 1</h2>
+    <form action="/submit" method="post">
+      <label for="user-email">Email:</label>
+      <input
+        type="email"
+        id="user-email"
+        name="user-email"
+        placeholder="you@example.com"
+        required
+      />
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
+    </form>
+
+    <h2>Task 2</h2>
+    <form action="/submit" method="post">
+      <label for="quantity">Quantity Of Beats:</label>
+      <input
+        type="number"
+        name="quantity"
+        id="quantity"
+        min="1"
+        max="99"
+        step="1"
+        value="1"
+        required
+      />
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
+    </form>
+
+    <h2>Task 3</h2>
+    <form action="/submit" method="post">
+      <label for="date">Enter Date:</label>
+      <input type="date" name="date" id="date" required />
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
+    </form>
+
+    <h2>Task 4</h2>
+    <form action="/submit" method="post">
+      <label for="range">Genre Ranges:</label>
+      <input
+        type="range"
+        id="range"
+        name="range"
+        min="1"
+        max="6"
+        value="6"
+        aria-valuetext="6"
+        aria-labelledby="range-output"
+      />
+      <span id="range-output">6</span>
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
+    </form>
+
+    <h1>Building a Comprehensive Web Form</h1>
+    <form action="/submit" method="post">
+      <fieldset>
+        <legend>Favorite Programming Language & Level Of Expertise:</legend>
+
+        <label for="programming-languages">Programming Languages</label>
+        <select
+          name="programming-languages"
+          id="programming-languages"
+          required
+        >
+          <option value="python">Python</option>
+          <option value="javascript">JavaScript</option>
+          <option value="opal">Opal</option>
+          <option value="occam">Occam</option>
+        </select>
+
+        <fieldset>
+          <legend>Level Of Expertise:</legend>
+          <label for="beginner">
+            <input type="radio" name="level" id="beginner" value="beginner" />
+            Beginner
+          </label>
+
+          <label for="intermediate">
+            <input
+              type="radio"
+              name="level"
+              id="intermediate"
+              value="intermediate"
+            />
+            Intermediate
+          </label>
+
+          <label for="advanced">
+            <input type="radio" name="level" id="advanced" value="advanced" />
+            Advanced
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferred Development Platform:</legend>
+          <label for="web">
+            <input type="checkbox" name="platform" id="web" value="web" /> Web
+          </label>
+
+          <label for="mobile">
+            <input type="checkbox" name="platform" id="mobile" value="mobile" />
+            Mobile
+          </label>
+
+          <label for="desktop">
+            <input
+              type="checkbox"
+              name="platform"
+              id="desktop"
+              value="desktop"
+            />
+            Desktop
+          </label>
+        </fieldset>
+
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+
+        <label for="menu-button">Close Menu:</label>
+        <button
+          id="menu-button"
+          aria-label="Close Menu"
+          aria-expanded="false"
+          role="button"
+        >
+          ☰
+        </button>
+      </fieldset>
+    </form>
+  </body>
+</html>
